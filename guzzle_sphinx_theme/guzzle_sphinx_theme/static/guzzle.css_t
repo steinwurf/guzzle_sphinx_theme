@@ -65,7 +65,7 @@ h1 {
   font-size: 38px;
   padding: 10px 10px 10px 45px;
   margin: 20px 0 35px -45px;
-  background-color: aliceblue;
+  background-color: hsla(71, 72%, 47%, 0.1);
   width: calc(100% + 90px);
   border-bottom: 1px solid #D8E4EF;
 }
@@ -236,7 +236,7 @@ div.sphinxsidebar .sidebar-toc a {
 }
 
 .sidebar-toc ul li a:hover {
-  background-color: #428bca;
+  background-color: hsla(71, 72%, 47%, 0.5);
   color: #fff;
 }
 
@@ -318,7 +318,7 @@ div.sphinxsidebar input {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0;
   font-weight: bold;
-  background-color: #337ab7;
+  background-color: #adce21;
   border-bottom: 1px solid #fff;
 }
 
@@ -549,6 +549,16 @@ table.field-list th {
 p.rubric {
   margin-top: 30px;
   font-weight: bold;
+}
+
+p:target {
+  animation: hilite 5s;
+}
+
+@keyframes hilite {
+  0% {background: transparent;}
+  10% {background: #adce21;}
+  100% {background: transparent;}
 }
 
 img.align-left, .figure.align-left, object.align-left {
