@@ -10,7 +10,7 @@ master_doc = 'index'
 templates_path = ['_templates']
 extensions = []
 source_suffix = '.rst'
-version = 'X.Y.Z'
+version = '2.3'
 exclude_patterns = ['_build']
 
 # -- HTML theme settings ------------------------------------------------
@@ -20,9 +20,13 @@ html_sidebars = {
     '**': ['logo-text.html',
            'globaltoc.html',
            'localtoc.html',
-           'searchbox.html']
+           'searchbox.html',
+           'versions.html',]
 }
 
+# ONLY for testing, this will make sure we use the guzzle_sphinx_theme in this
+# repository
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import guzzle_sphinx_theme
 
 extensions.append("guzzle_sphinx_theme")
@@ -31,5 +35,6 @@ html_theme = 'guzzle_sphinx_theme'
 
 # Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
-    "base_url": "http://my-site.com/docs/"
+    "base_url": "http://my-site.com/docs/",
+    "version_json_location": "/demo/versions.json"
 }
