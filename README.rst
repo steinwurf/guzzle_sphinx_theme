@@ -36,6 +36,9 @@ Add the following to your conf.py:
         "project_nav_name": "Project Name",
     }
 
+    # Set a logo that should be added in the top of the sidebar
+    html_logo = "my_logo.svg"
+
 There are a lot more ways to customize this theme, as this more comprehensive
 example shows:
 

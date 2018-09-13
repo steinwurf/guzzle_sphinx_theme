@@ -17,12 +17,15 @@ exclude_patterns = ['_build']
 
 html_show_sourcelink = False
 html_sidebars = {
-    '**': ['logo-text.html',
+    '**': ['logo.html',
+           'logo-text.html',
            'globaltoc.html',
            'localtoc.html',
            'searchbox.html',
            'versions.html',]
 }
+
+html_logo = "steinwurf_logo_big.svg"
 
 # ONLY for testing, this will make sure we use the guzzle_sphinx_theme in this
 # repository

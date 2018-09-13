@@ -65,7 +65,7 @@ h1 {
   font-size: 38px;
   padding: 10px 10px 10px 45px;
   margin: 20px 0 35px -45px;
-  background-color: hsla(71, 72%, 47%, 0.1);
+  background-color: hsla(85, 54%, 51%, 0.1);
   width: calc(100% + 90px);
   border-bottom: 1px solid #D8E4EF;
 }
@@ -236,7 +236,7 @@ div.sphinxsidebar .sidebar-toc a {
 }
 
 .sidebar-toc ul li a:hover {
-  background-color: hsla(71, 72%, 47%, 0.5);
+  background-color: hsla(85, 54%, 51%, 0.5);
   color: #fff;
 }
 
@@ -272,6 +272,14 @@ div.sphinxsidebar .sidebar-toc ul ul {
     padding-left: 24px;
 }
 
+.sidebar-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 div.sphinxsidebar input {
   border: 1px solid #ccc;
   font-family: Helvetica, arial, freesans, clean, sans-serif;
@@ -286,6 +294,7 @@ div.sphinxsidebar input {
   padding: 0;
   margin: 14px 0 30px 0;
 }
+
 
 .sidebar-block h2 {
   border-bottom: none;
@@ -318,7 +327,7 @@ div.sphinxsidebar input {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0;
   font-weight: bold;
-  background-color: #adce21;
+  background-color: hsla(85, 54%, 51%, 1.0);
   border-bottom: 1px solid #fff;
 }
 
