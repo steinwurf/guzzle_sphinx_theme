@@ -35,6 +35,10 @@ a.headerlink {
   text-decoration: none;
 }
 
+a { color:#8dc63f; }
+
+a:hover,a:focus{ color:#8dc63f; }
+
 h1:hover > a.headerlink,
 h2:hover > a.headerlink,
 h3:hover > a.headerlink,
