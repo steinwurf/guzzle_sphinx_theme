@@ -9,13 +9,14 @@
 </div>
 <script>
 $(document).ready(function() {
-  const this_version = '{{version}}';
-  const version_json_location = '{{theme_version_json_location}}';
+  const this_version = '{{ release }}';
+  const version_json_location = '{{ pathto(theme_version_json_location, 1) }}';
+  const path_to_root = '{{ pathto('./', 1) }}';
 
   function addVersion(name, url) {
     const a = $('<a></a>');
     a.text(name);
-    a.attr('href', url);
+    a.attr('href', path_to_root + url);
     const dd = $('<dd></dd>').append(a);
     let final = dd;
     if (name === this_version)
