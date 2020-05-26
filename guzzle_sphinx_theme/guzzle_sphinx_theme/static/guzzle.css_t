@@ -35,9 +35,9 @@ a.headerlink {
   text-decoration: none;
 }
 
-a { color:#8dc63f; }
+a { color: #{{theme_link_color}}; }
 
-a:hover,a:focus{ color:#8dc63f; }
+a:hover,a:focus{ color: #{{theme_link_hover_color}}; }
 
 h1:hover > a.headerlink,
 h2:hover > a.headerlink,
@@ -69,7 +69,7 @@ h1 {
   font-size: 38px;
   padding: 10px 10px 10px 45px;
   margin: 20px 0 35px -45px;
-  background-color: hsla(85, 54%, 51%, 0.1);
+  background-color: #{{theme_h1_background_color}};
   width: calc(100% + 90px);
   border-bottom: 1px solid #D8E4EF;
 }
@@ -121,7 +121,7 @@ code, pre, tt {
 }
 
 code, tt {
-  color: #8D1A38;
+  color: #{{theme_code_color}};
 }
 
 tt {
@@ -236,7 +236,7 @@ div.sphinxsidebar .sidebar-toc a {
 }
 
 .sidebar-toc ul li a:hover {
-  background-color: hsla(85, 54%, 51%, 0.5);
+  background-color: #{{theme_sidebar_hover_color}};
   color: #fff;
 }
 
@@ -327,7 +327,7 @@ div.sphinxsidebar input {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0;
   font-weight: bold;
-  background-color: hsla(85, 54%, 51%, 1.0);
+  background-color: #{{theme_logo_text_background_color}};
   border-bottom: 1px solid #fff;
 }
 
@@ -355,6 +355,11 @@ div.sphinxsidebar input {
 
 .search-page-form {
   width: 350px;
+}
+
+#main-search form .form-control:focus {
+  border-color: #{{theme_search_form_focus_color}};
+  box-shadow: inset 0 1px 1px #00000013, 0 0 8px #{{theme_search_form_focus_color}};
 }
 
 /* Two-pane table list
@@ -572,13 +577,13 @@ p.rubric {
   font-weight: bold;
 }
 
-p:target {
+:target {
   animation: hilite 5s;
 }
 
 @keyframes hilite {
   0% {background: transparent;}
-  10% {background: #adce21;}
+  10% {background: #{{theme_target_highlight_color}};}
   100% {background: transparent;}
 }
 
@@ -750,7 +755,7 @@ ol.upperroman {
 }
 
 .highlighted {
-  background-color: #fbe54e;
+  background-color: #{{theme_highlighted_color}};
 }
 
 dl.glossary dt {
