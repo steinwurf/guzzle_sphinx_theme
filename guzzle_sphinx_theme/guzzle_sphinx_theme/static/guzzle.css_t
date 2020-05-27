@@ -395,6 +395,13 @@ table.two-column {
   margin: 24px auto;
 }
 
+/* Fork me ribbon
+-------------------------------------------------- */
+
+.github-fork-ribbon:before {
+  background-color: #{{theme_forkme_ribbon_color}};
+}
+
 /* Next and previous links
 -------------------------------------------------- */
 

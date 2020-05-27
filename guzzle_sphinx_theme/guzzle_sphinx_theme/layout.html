@@ -3,6 +3,10 @@
 {# Do this so that bootstrap is included before the main css file #}
 {%- block htmltitle %}
 {% set script_files = script_files + ["_static/myscript.js"] %}
+<!-- Licensed under the MIT License -->
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css"
+  />
 <!-- Licensed under the Apache 2.0 License -->
 <link rel="stylesheet" type="text/css" href="{{
   pathto('_static/fonts/open-sans/stylesheet.css', 1) }}" />
@@ -153,8 +157,17 @@ macro #}
   {%- endblock %}
 </div>
 {%- endif %}
+{%- if theme_forkme_repository %}
+{% set provider = theme_forkme_repository.provider %}
+{% set url = theme_forkme_repository.url %}
+<a class="github-fork-ribbon left-bottom fixed"
+  href="{{url}}"
+  data-ribbon="Fork me on {{provider}}"
+  title="Fork me on {{provider}}">
+  Fork me on {{provider}}
+</a>
+{%- endif %}
 {%- endblock %}
-
 {%- block footer %}
 <script type="text/javascript">
   $("#mobile-toggle a").click(function () {

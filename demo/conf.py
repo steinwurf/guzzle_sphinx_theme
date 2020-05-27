@@ -38,4 +38,8 @@ html_theme = 'guzzle_sphinx_theme'
 # Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
     "base_url": "http://my-site.com/docs/",
+    "forkme_repository": {
+        "provider": "GitHub",
+        "url": "https://github.com/steinwurf/guzzle_sphinx_theme"
+    }
 }
