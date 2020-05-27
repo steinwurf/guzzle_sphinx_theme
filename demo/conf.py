@@ -21,8 +21,7 @@ html_sidebars = {
            'logo-text.html',
            'globaltoc.html',
            'localtoc.html',
-           'searchbox.html',
-           'versions.html',]
+           'searchbox.html']
 }
 
 html_logo = "steinwurf_logo_big.svg"
@@ -39,5 +38,4 @@ html_theme = 'guzzle_sphinx_theme'
 # Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
     "base_url": "http://my-site.com/docs/",
-    "version_json_location": "/demo/versions.json"
 }

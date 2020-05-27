@@ -478,18 +478,6 @@ ul.keywordmatches li.goodmatch a {
   font-weight: bold;
 }
 
-/* Left-nav versions
--------------------------------------------------- */
-
-.sidebar-versions dd{
-    display:inline-block;
-    margin:0;
-}
-.sidebar-versions dd a{
-    display:inline-block;
-    padding: 4px;
-}
-
 /* -- general index --------------------------------------------------------- */
 
 table {
