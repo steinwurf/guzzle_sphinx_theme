@@ -116,7 +116,7 @@ p {
 }
 
 code, pre, tt {
-  font-size: 15px;
+  font-size: 90%;
   font-family: Consolas, monospace;
 }
 
