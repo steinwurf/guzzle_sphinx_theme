@@ -155,6 +155,12 @@ a.internal em {
   font-style: normal;
 }
 
+a.external:after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+  font-size: small;
+}
+
 dl dd {
   margin: 3px 0 10px 30px;
 }
